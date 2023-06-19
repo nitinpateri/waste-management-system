@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <script src="https://kit.fontawesome.com/6ec1b407db.js" crossorigin="anonymous"></script>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Waste Management and donations</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="../public/stylesheets/style.css">
+</head>
+<body>
+    <div id="home-img">
+        <img id="logo"src='../public/images/logo.png'>
+        <h1>Waste Management and Donations</h1>
+    </div>
+    <!--Search-->
+    <div id="search" onclick='SEARCH()'>
+        <form action='search' method='POST'>
+            <input name="search" type="search"  placeholder="Search">
+            <button  type="submit"><i class="fas fa-search"></i></button>
+        </form>
+    </div>
+
+    <div id="search-result">
+        <form>
+            <table>
+            <% for(i in users){%>
+                <tr>
+                    <th><i class="fas fa-user-alt"></i></th>
+                    <th><%=users[i]['username']%><br><%=users[i]['category']%></th>
+                    <th><button type="submit">Follow</button></th>
+
+                </tr>
+            <% }%>
+            </table>
+
+        </form>
+    </div>
+    <div id="footer">
+        <i class="fas fa-home"></i>
+        <i class="fas fa-search"></i>
+        <i class="fas fa-plus-square"></i>
+        <i class="fas fa-comment"></i>
+        <i class="fas fa-user-alt"></i>
+    </div>
+    <script>
+
+    </script>
+</body>
+
+</html>

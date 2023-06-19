@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <script src="https://kit.fontawesome.com/6ec1b407db.js" crossorigin="anonymous"></script>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Waste Management and donations</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="stylesheets\\style.css">
+</head>
+<body>
+    <!--Header-->
+    <div id="home-img">
+        <img id="logo" src='images/logo.png'>
+        <h1>Waste Management and Donations</h1>
+    </div>
+    <!--Home-->
+    <br><br><br>
+    <h2>Notifications</h2>
+    <div style='background:white'>
+        <h3><%=user[0]%></h3>
+        <p><%=user[1]%></p>
+        <a href="/notifications"> <a href=<%=user[0]+'/message'%>><button style="margin-left:10px;padding:5px;border-radius:8px;background:red;text-decoration:none;color:white">Reply</button></a>
+
+    </div>
+
+    <br><br>
+    <!--Footer-->
+    <div id="footer">
+        <i class="fas fa-home" onclick='MAIN()'></i>
+        <i class="fas fa-search" onclick='SEARCH()'></i>
+        <i class="fas fa-plus-square" onclick='UPLOAD()'></i>
+        <i class="far fa-bell"></i>
+        <i class="fas fa-user-alt"></i>
+    </div>
+</body>
+</html>

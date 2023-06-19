@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Waste Management and donations</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="stylesheets/style.css">
+</head>
+<body>
+    <img id="logo" src='/images/logo.png'>
+    <div id='Register' style='display:block'>
+        <img id="logo" src='/images/logo.png'>
+        <h1>Edit Profile</h1>
+        <form action='/save' method="post">
+            <label>Username</label><br>
+            <input type="text" requried name="username" id="username" placeholder=<%=users['username']%>><br><br>
+            <label>Password</label><br>
+            <input type="password" requried name="passwd" id="passwd" placeholder="****"><br><br>
+            <label>Category</label><br>
+            <select name="Category" onchange="getSelectValue()" >
+                <option value="Category"><%=users['category']%></option>
+                <option value='Volenteer'>Volenteer</option>
+                <option value='Donor'>Donor</option>
+                <option value='Organization'>Organization</option>
+            </select><br><br>
+            <label>Location</label>
+            <select name="Location" onchange="getSelectValue()">
+                <option><%=users['location']%></option>
+                <option value="Rolla_Sharjah">Rolla,Sharjah</option>
+                <option value="Bur_Dubai_Dubai">Bur Dubai,Dubai</option>
+                <option value="National_Paints_Sharjah">National Paints,Sharjah</option>
+            </select><br><br>
+            <button type="submit" id ='button' class='button' id='button'>Save Changes</button>
+        </form>
+    </div>
+</body>
+<script>
+    var button = document.getElementById('button')
+    button.onclick =()=>{
+        alert('Saved Changes')
+    }
+</script>
+
+</html>

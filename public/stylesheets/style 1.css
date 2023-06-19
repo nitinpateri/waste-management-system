@@ -1,0 +1,241 @@
+*{
+    padding:0;
+    border: 0;
+}
+body{
+    background-color: rgb(108, 255, 157);
+}
+#signin{
+    display: block;
+}
+#logo{
+    top:8%;
+    left:44%;
+    position: absolute;
+    transform: rotate(30deg);
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px 3px #fff;
+}
+h1{
+    top:15%;
+    left:50%;
+    position:absolute;
+    transform:translate(-50%,0)
+}
+form{
+    top:30%;
+    left:50%;
+    position:absolute;
+    transform:translate(-50%,0)
+}
+label{
+    font-size: 20px;
+}
+input{
+    width:250px;
+    height:20px;
+    margin-top:5px;
+    border-radius: 7px;
+    padding: 5px;
+}
+#button,.button{
+    width: 260px;
+    text-align: center;
+    height: 25px;
+    background-color: rgb(86, 86, 248);
+    font-weight: bolder;
+    text-decoration: none;
+    color:black;
+    position: relative;
+}
+button{
+    cursor: pointer;
+    background-color: transparent;
+    color:blue;
+    text-decoration: underline;
+}
+#Register{
+    display: none;
+}
+#signin p{
+    top:60%;
+    left: 50%;
+    transform: translate(-50%,0);
+    position: absolute;
+}
+
+#Register p{
+    top:90%;
+    left: 50%;
+    transform: translate(-50%,0);
+    position: absolute;
+}
+select{
+   width:260px;
+   height:26px;
+   background:white;
+}
+#registered{
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    position:absolute;
+    width:70%;
+}
+    #registered a {
+        width: 80px;
+        background-color: rgb(86, 86, 248);
+        text-align: center;
+        cursor: pointer;
+        top: 120%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        position: absolute;
+        padding:7px;
+        font-weight:900;
+        border-radius:13px;
+        text-decoration:none;
+        color:black;
+    }
+#footer {
+    top: 94.3%;
+    width: 100%;
+    height: 40px;
+    position: fixed;    
+    box-shadow: 0px 0px 1px 1px #000;
+    z-index: 2;
+    left: 0%;
+    background:#01d08b;
+}
+i{
+    font-size:20px;
+    padding:12px;
+    padding-left:35px;
+}
+#home-img{
+    position:fixed;
+    top:0%;
+}
+#home-img img{
+    top:2%;
+    left:2%;
+    position:fixed;
+
+}
+#home-img h1{
+    top:2%;
+    left:70%;
+    position:fixed;
+    font-size:18px;
+    width:100%;
+}
+#home-img {
+    height: 60px;
+    box-shadow: 1px 1px 1px 1px black;
+    width: 100%;
+    z-index: 1;
+    background-color: rgb(108, 295, 157);
+}
+#main{
+    display:block;
+}
+#search {
+    top: 20%;
+    left: 47%;
+    position: absolute;
+    display:none;
+}
+#search-result{
+    display:none;
+}
+#search input{
+    height:30px;
+    width:300px;
+}
+#search button{
+    top:-5%;
+    position:absolute;
+    left:77%;
+}
+#upload{
+    display:none;
+}
+#upload label {
+    top: -5%;
+    left: 55%;
+    transform: translate(-50%,0);
+    position: absolute;
+    display: inline flex;
+    width: 300px;
+    box-shadow: 0px 0px 1px 1px black;
+    text-align:center;
+}
+#upload textarea {
+    height: 150px;
+    width: 300px;
+    top: 30px;
+    left: 15px;
+    position: absolute;
+    box-shadow: 0px 0px 1px 1px black;
+}
+textarea::placeholder{
+    font-size:17px;
+}
+#upload button {
+    transform: translate(15px,190px);
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    width: 300px;
+    box-shadow: 0 0 1px 1px black;
+    background-color: rgb(86, 86, 248);
+    font-weight: bolder;
+}
+#main table {
+    margin-top: 60px;
+    border-collapse: collapse;
+}
+#main td p {
+    width: 300px;
+    font-size: 16px;
+    position: relative;
+    left:30%;
+}
+#main th i {
+    left: -100px;
+    position: relative;
+    box-shadow: 1px 1px 1px 1px black;
+}
+#main th h2 {
+    width: 300%;
+    height: 26px;
+    transform:translate(-300%,0);
+    font-size: 16px;
+}
+#main tr{
+    background:white;
+}
+#search-result tr {
+    width: 270px;
+    background: white;
+    height: 50px;
+    transform: translate(-10px,0);
+    border-collapse: collapse;
+}
+#search-result i,#main i {
+    font-size: 17px;
+    padding: 5px;
+    border-radius: 25px;
+    background: #c5c5c5;
+}
+#search-result button {
+    padding: 5px;
+    background: #ff002b;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+#tr{
+    height:25px;
+    background:transparent;
+}
